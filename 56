@@ -1,0 +1,470 @@
+local OrionLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/shlexware/Orion/main/source")()
+local Window = OrionLib:MakeWindow({Name = "黑鸦 I 造船寻宝", HidePremium = false, SaveConfig = true, ConfigFolder = "造船寻宝"})
+local PlayerName = game.Players.LocalPlayer.Name
+OrionLib:MakeNotification({
+	Name = "执行成功",
+	Content = "sz",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Autofarms = Window:MakeTab({
+	Name = "自动农场",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local cooltoggle = Autofarms:AddToggle({
+	Name = " 快",
+	Default = false,
+	Flag = "toggle",
+	Callback = function(AutoFast)
+		getgenv().FARMFAST = AutoFast
+		if AutoFast == true then
+			repeat
+				wait(4)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage1.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage1.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage1.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage2.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage2.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage2.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage3.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage3.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage3.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage4.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage4.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage4.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage5.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage5.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage5.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage6.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage6.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage6.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage7.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage7.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage7.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage8.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage8.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage8.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage9.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage9.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage9.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(0.7)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.CFrame
+				wait(18)
+				workspace.ClaimRiverResultsGold:FireServer()
+				wait(10)
+			until getgenv().FARMFAST == false 
+			if getgenv().FARMFAST == false then
+				Float:Destroy()
+			end
+			end
+		end
+})
+local cooltoggle1 = Autofarms:AddToggle({
+	Name = "中",
+	Default = false,
+	Flag = "toggle1",
+	Callback = function(AutoMed)
+		getgenv().FARMMED = AutoMed
+		if AutoMed == true then
+			repeat
+				wait(4)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage1.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage1.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage1.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage2.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage2.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage2.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage3.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage3.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage3.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage4.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage4.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage4.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage5.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage5.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage5.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage6.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage6.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage6.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage7.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage7.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage7.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage8.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage8.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage8.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage9.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage9.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage9.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(1.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.CFrame
+				wait(3)
+						--Players
+		    	Players = game.Players
+				--Localplayer
+   				 LocalPlayer = Players.LocalPlayer
+   				 Character = workspace:FindFirstChild(LocalPlayer.Name)
+				Character.Head:Destroy()
+				wait(18)
+				workspace.ClaimRiverResultsGold:FireServer()
+				wait(10)
+				
+			until getgenv().FARMMED == false
+			if getgenv().FARMMED == false then
+				Float:Destroy()
+			end
+			end
+	end    
+})
+local cooltoggle2 = Autofarms:AddToggle({
+	Name = "慢",
+	Default = false,
+	Callback = function(AutoSlow)
+		getgenv().FARMSLOW = AutoSlow
+		if AutoSlow == true then
+			repeat
+				wait(4)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage1.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage1.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage1.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage2.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage2.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage2.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage3.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage3.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage3.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage4.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage4.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage4.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage5.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage5.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage5.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage6.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage6.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage6.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage7.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage7.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage7.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage8.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage8.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage8.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage9.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage9.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage9.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart.CFrame
+				local Float = Instance.new('Part')
+	  			Float.Name = "FLOAT"
+				Float.Parent = game.Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart
+				Float.Transparency = 1
+				Float.Size = Vector3.new(5,0.2,5)
+				Float.Anchored = true
+				Float.CFrame = game.Workspace.BoatStages.NormalStages.CaveStage10.DarknessPart.CFrame * CFrame.new(0, -3.1 , 0)
+				wait(3)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.CFrame
+				wait(18)
+				workspace.ClaimRiverResultsGold:FireServer()
+				wait(10)
+			until getgenv().FARMSLOW == false
+			if getgenv().FARMSLOW == false then
+				Float:Destroy()
+			end
+			end
+	end    
+})
+
+local TPS = Window:MakeTab({
+	Name = "传送",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+TPS:AddButton({
+	Name = "红色团队",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(427.746552, 0.8000021, -64.7801361, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+  	end    
+})
+TPS:AddButton({
+	Name = "绿色团队",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-534.877563, 0.8000021, 293.56665, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+  	end    
+})
+TPS:AddButton({
+	Name = "蓝色团队",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(427.746552, 0.8000021, 300.219849, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+  	end    
+})
+TPS:AddButton({
+	Name = "黄色团队",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-534.877563, 0.8000021, 640.56665, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+  	end    
+})
+TPS:AddButton({
+	Name = "黑色团队",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-534.877563, 0.8000021, -69.433342, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+  	end    
+})
+TPS:AddButton({
+	Name = "洋红色团队",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(427.746552, 0.8000021, 647.219849, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+  	end    
+})
+TPS:AddButton({
+	Name = "白色团队",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-49.8510132, 0.8000021, -551.420044, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+  	end    
+})
+TPS:AddButton({
+	Name = "结束",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.7065125, -340.739624, 9452.35645, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+  	end    
+})
+
+local Chests = Window:MakeTab({
+	Name = "箱子",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+getgenv().ChestCounts = 0
+Chests:AddDropdown({
+	Name = "数量",
+	Default = "1",
+	Options = {"1", "5", "10", "15", "20", "30", "40", "50", "70", "100"},
+	Callback = function(ChestCountts)
+		getgenv().ChestCounts = ChestCountts
+	end    
+})
+Chests:AddDropdown({
+	Name = "箱子",
+	Default = "None",
+	Options = {"None", "普通", "不寻常", "罕见", "史诗", "传奇"},
+	Callback = function(ChestValue)
+		getgenv().ChestName = ChestValue
+	end    
+})
+Chests:AddButton({
+	Name = "买箱子",
+	Callback = function()
+      		if getgenv().ChestName == none then return
+      		else
+      			local args = {
+      				[1] = getgenv().ChestName,
+      				[2] = tonumber(getgenv().ChestCounts)
+      			}
+workspace.ItemBoughtFromShop:InvokeServer(unpack(args))
+	end
+  	end    
+})
+
+local Morph = Window:MakeTab({
+	Name = "变形",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Morph:AddButton({
+	Name = "变形为狐狸",
+	Callback = function()
+      		CC = game:GetService("Workspace").ChangeCharacter
+            CC:FireServer("FoxCharacter")
+  	end    
+})
+Morph:AddButton({
+	Name = "变身为企鹅",
+	Callback = function()
+      		CC = game:GetService("Workspace").ChangeCharacter
+            CC:FireServer("PenguinCharacter")
+  	end    
+})
+Morph:AddButton({
+	Name = "变身为鸡",
+	Callback = function()
+      		CC = game:GetService("Workspace").ChangeCharacter
+            CC:FireServer("ChickenCharacter")
+  	end    
+})
